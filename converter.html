@@ -76,7 +76,31 @@
         </div>
         
         
-        <div id="divConverterDados" class="hidden">colocar coisa</div>
+        <div id="divConverterDados" class="hidden">
+            <!-- select unidades: bit(0 1), byte(8 Bits), quilo (kbyte- 8 bytes),
+            megabyte (1024 kbytes), gigabyte(1024 mb), terabyte(0124gb)  -->
+            <select id=iptUnidade>
+                <option value="bit">BIT</option>
+                <option value="byte">BYTE</option>
+                <option value="kbyte">KBYTE</option>
+                <option value="mgbyte">MEGABYTE</option>
+                <option value="gigabyte">GIGABYTE</option>
+                <option value="terabyte">TERABYTE</option>
+            </select>
+            
+            <input type="number" placeholder="Insira um Valor">
+           <!-- testar select option com value null -->
+            <select id=iptUnidadeConversao>
+                <option value="bit">BIT</option>
+                <option value="byte">BYTE</option>
+                <option value="kbyte">KBYTE</option>
+                <option value="mgbyte">MEGABYTE</option>
+                <option value="gigabyte">GIGABYTE</option>
+                <option value="terabyte">TERABYTE</option>
+            </select>
+            <div id="resultadoDados"></div>
+            
+        </div>
             
     </main>
 
