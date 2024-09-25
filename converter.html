@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONVERTECH</title>
+    <link rel="stylesheet" href="styleConverTECH.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <span id="titulo">CONVERTECH MACHINE</span>
+
+        <div id="botoes">
+           
+            <button onclick="converterBases()" class="botao">CONVERTER BASES</button>
+            
+            <button onclick="calculadoraBases()" class="botao">CALCULADORA DE BASES</button>
+            
+            <button onclick="converterDados()" class="botao">CONVERTER DADOS</button>
+            
+    </header>
+
+    <main id="mainContent">
+        <div id="standard" class="">
+            <span>Welcome to CONVERTECH <br>
+                Selecione a Função Desejada</span>
+        </div>
+        
+        
+       
+        <div id="divConverterBases" class="hidden">
+
+            <input type="text" placeholder="Insira um Número" id="iptNumberConv">
+
+            <select id="iptBaseUser">
+                <option value="decimal">Decimal</option>
+                <option value="binario">Binário</option>
+                <option value="octal">Octal</option>
+                <option value="hexadecimal">Hexadecimal</option>
+            </select>
+
+            <span>Converter para a base:</span>
+            
+            <select id="iptBaseConv">
+                <option value="decimal">Decimal</option>
+                <option value="binario">Binário</option>
+                <option value="octal">Octal</option>
+                <option value="hexadecimal">Hexadecimal</option>
+            </select>
+
+            <button onclick="btn_converterBases()">CONVERTER</button>
+            <div id="resultadoConversaoBase"></div>
+
+        </div>
+
+        
+        <div id="divCalculadoraBases" class="hidden">
+
+            <span>Selecione a base para os cálculos:</span> 
+            
+            <select id="iptBaseCalculo">
+                <option value="decimal">Decimal</option>
+                <option value="binario">Binário</option>
+                <option value="octal">Octal</option>
+                <option value="hexadecimal">Hexadecimal</option>
+            </select>
+
+             <input type="text" placeholder="Insira um Número" id="iptNumber1">
+             <input type="text" placeholder="Insira um Número" id="iptNumber2">
+
+             <button onclick="btn_calculadoraBases()">Realizar Cálculos</button>
+             <div id="resulBaseCalc"></div>
+        </div>
+        
+        
+        <div id="divConverterDados" class="hidden">colocar coisa</div>
+            
+    </main>
+
+    <footer>
+        Project made by: Shirley Ferreira
+    </footer>
+</body>
+</html>

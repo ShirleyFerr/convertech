@@ -1,0 +1,85 @@
+ 
+  /* cabeçalho */  
+
+ header {
+    /* background-image: url("https://etap.com/images/default-source/static/etap-21-release/binary-animation.gif?sfvrsn=411527c_2"); */
+    height: 165px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    background-color: #0f1546a9;
+}
+
+#titulo {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    font-family: sans-serif, monospace;
+    font-weight: 500;
+    margin-top: auto;
+
+}
+
+#botoes {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 45px;
+    background-color: #5994ce9c;
+    margin-block-start: auto;
+
+}
+
+.botao {
+    height: 45px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: #5994ce96;
+    border: 1px;
+}
+.botao:hover {
+    background-color: #0f154686;
+}
+
+body {
+    background-color: #0F1546;
+    background-image: url(https://cyfor.co.uk/wp-content/uploads/2023/09/Website-Carousel-Imagery-1800-%C3%97-1000-px-2560-%C3%97-1707-px-1800-x-1000-px.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+}
+/* MENU PRINCIPAL*/
+#standard{
+  color: white;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  justify-items: center; 
+  font-family: sans-serif, monospace;
+  
+}
+
+/* calculadoras */
+main {
+  margin-top: 150px;
+}
+
+.hidden {
+    display: none;
+}
+
+#divConverterBases {
+  width: 700px;
+  height: 500px;
+ background-color: rgb(59, 74, 122);
+}
+
+
+footer {
+ width: 100%;
+ color: white;
+ 
+}
