@@ -15,36 +15,36 @@
 
         <div id="botoes">
            
-            <button onclick="converterBases()" class="botao">CONVERTER BASES</button>
-            
-            <button onclick="calculadoraBases()" class="botao">CALCULADORA DE BASES</button>
-            
+            <button onclick="converterBases()" class="botao">CONVERTER BASES</button>            
+            <button onclick="calculadoraBases()" class="botao">CALCULADORA DE BASES</button>           
             <button onclick="converterDados()" class="botao">CONVERTER DADOS</button>
-            
+        </div>  
     </header>
 
     <main id="mainContent">
-        <div id="standard" class="">
-            <span>Welcome to CONVERTECH <br>
-                Selecione a Função Desejada</span>
-        </div>
-        
-        
        
+        <div id="standard" class="hidden">
+            <span class="welcome">Welcome to CONVERTECH</span>
+            
+            <span class="welcome">Selecione a Função Desejada</span>
+        </div>
+          
         <div id="divConverterBases" class="hidden">
 
             <input type="text" placeholder="Insira um Número" id="iptNumberConv">
 
-            <select id="iptBaseUser">
+            <select id="iptBaseUser" class="select">
+                
                 <option value="decimal">Decimal</option>
                 <option value="binario">Binário</option>
                 <option value="octal">Octal</option>
                 <option value="hexadecimal">Hexadecimal</option>
             </select>
 
-            <span>Converter para a base:</span>
+            <span class="texto">CONVERTER PARA A BASE:</span>
             
             <select id="iptBaseConv">
+                
                 <option value="decimal">Decimal</option>
                 <option value="binario">Binário</option>
                 <option value="octal">Octal</option>
@@ -55,11 +55,10 @@
             <div id="resultadoConversaoBase"></div>
 
         </div>
-
-        
+ 
         <div id="divCalculadoraBases" class="hidden">
 
-            <span>Selecione a base para os cálculos:</span> 
+            <span class="texto">SELECIONE A BASE PARA OS CÁLCULOS:</span> 
             
             <select id="iptBaseCalculo">
                 <option value="decimal">Decimal</option>
@@ -71,15 +70,17 @@
              <input type="text" placeholder="Insira um Número" id="iptNumber1">
              <input type="text" placeholder="Insira um Número" id="iptNumber2">
 
-             <button onclick="btn_calculadoraBases()">Realizar Cálculos</button>
+             <button onclick="btn_calculadoraBases()">REALIZAR CÁLCULOS</button>
              <div id="resulBaseCalc"></div>
         </div>
-        
+
         
         <div id="divConverterDados" class="hidden">
             <!-- select unidades: bit(0 1), byte(8 Bits), quilo (kbyte- 8 bytes),
             megabyte (1024 kbytes), gigabyte(1024 mb), terabyte(0124gb)  -->
+            
             <select id=iptUnidade>
+                
                 <option value="bit">BIT</option>
                 <option value="byte">BYTE</option>
                 <option value="kbyte">KBYTE</option>
@@ -89,8 +90,9 @@
             </select>
             
             <input type="number" placeholder="Insira um Valor">
-           <!-- testar select option com value null -->
+            <span class="texto">TRANSFORMAR EM:</span>
             <select id=iptUnidadeConversao>
+                
                 <option value="bit">BIT</option>
                 <option value="byte">BYTE</option>
                 <option value="kbyte">KBYTE</option>
@@ -98,14 +100,18 @@
                 <option value="gigabyte">GIGABYTE</option>
                 <option value="terabyte">TERABYTE</option>
             </select>
+            
+            <button onclick="btn_converterDados()">TRANSFORMAR</button>
+            
             <div id="resultadoDados"></div>
             
         </div>
             
     </main>
-
+  
     <footer>
-        Project made by: Shirley Ferreira
+        <span>Project made by: Shirley Ferreira Lima | RA: 01242012 </span>
+        <hr>
     </footer>
 </body>
 </html>
